@@ -19,10 +19,16 @@ export default function BgSlider() {
 	}, [disableScroll]);
 
 	return (
-		<div
-			className='test'
-			onMouseEnter={() => setDisableScroll(true)}
-			onMouseLeave={() => setDisableScroll(false)}
-		></div>
+		<section className='bg-slider'>
+			<div className='bg-slider__image'></div>
+			<div className='bg-slider__text'>
+				<img className='bg-slider__text-image' src='/src/images/crescent.svg' alt='' width='400' height='400' />
+				<h3 className='bg-slider__title'>Подземный паркинг</h3>
+				<p className='bg-slider__description'>
+					<b>Под каждым домом располагается паркинг с зарядками для электрокаров.</b> Спуститься в него можно
+					на лифте прямо с жилого этажа. 
+				</p>
+			</div>
+		</section>
 	);
 }

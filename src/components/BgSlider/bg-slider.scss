@@ -1,5 +1,49 @@
-.test {
-	width: 100vw;
+.bg-slider {
+	display: flex;
 	height: 100vh;
-	background-color: red;
+	color: var(--text-color);
+	overflow: hidden;
+	letter-spacing: 0.05em;
+
+	> div {
+		width: 50%;
+	}
+
+	&__image {
+		background-image: url("/src/images/parking.jpg");
+		background-size: cover;
+	}
+
+	&__text {
+		--padding-bottom: 50px;
+		--padding-left: 50px;
+
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: flex-end;
+		position: relative;
+		background-color: var(--bg-color);
+		padding: 0 100px var(--padding-bottom) var(--padding-left);
+	}
+	&__text-image {
+		position: absolute;
+		top: -180px;
+		right: -180px;
+	}
+	&__title {
+		position: relative;
+		z-index: 1;
+		text-transform: uppercase;
+		font-family: title;
+		font-size: 48px;
+		text-align: right;
+		width: 80%;
+	}
+	&__description {
+		position: absolute;
+		bottom: var(--padding-bottom);
+		left: var(--padding-left);
+		width: 80%;
+	}
 }
