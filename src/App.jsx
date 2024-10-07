@@ -1,7 +1,7 @@
-import PlanetSlider from "./components/PlanetSlider";
+import BgSlider from "./components/BgSlider";
 
 import "reset-css";
 
 export default function App() {
-	return <PlanetSlider />;
+	return <BgSlider />;
 }
